@@ -56,10 +56,10 @@
 
     <bean id="jedisPool" class="redis.clients.jedis.JedisPool">
     <constructor-arg index="0" ref="jedisPoolConfig"/>
-    <constructor-arg index="1" value="127.0.0.1"/>
+    <constructor-arg index="1" value="192.168.0.101"/>
     <constructor-arg index="2" value="6379" type="int"/>
     <constructor-arg index="3" value="1000" type="int"/>
-    <!--<constructor-arg index="4" value="${redis.password}"/>-->
+    <constructor-arg index="4" value="local-fuck-888"/>
     </bean>
 
     <!--<bean id="transactionRepository" class="org.mengyun.tcctransaction.repository.FileSystemTransactionRepository">-->
